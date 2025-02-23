@@ -10,147 +10,77 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <style>
-        .navbar-custom {
-            padding: 10px 30px;
-        }
-        .nav-link {
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: blue;
-        }
-        .phone-icon {
-            color: blue;
-            font-size: 1.2rem;
-            margin-right: 5px;
-        }
-        .contact-button {
-            background-color: blue;
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            font-weight: 500;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
-        .contact-button:hover {
-            background-color: darkblue;
+            text-align: left;
         }
 
-        .sticky-header {
-            position: sticky;
+        .hero-overlay {
+            position: absolute;
             top: 0;
-            z-index: 1000;
-            background-color: #2C3E50;
-            padding: 10px 20px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
         }
-        .nav-text {
-            color: #BDC3C7;
-            font-weight: 500;
-            text-decoration: none;
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
         }
-        .nav-text:hover {
-            color: white;
+
+        .hero-buttons .btn {
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 6px;
         }
-        .icon-btn {
-            background: transparent;
-            border: none;
-            color: #BDC3C7;
-            font-size: 1.2rem;
-            margin-right: 10px;
+
+        .btn-primary {
+            background-color: #0062ff;
+            border-color: #0062ff;
         }
-        .icon-btn:hover {
-            color: white;
+
+        .btn-primary:hover {
+            background-color: #004fcc;
+            border-color: #004fcc;
         }
-        .cart-btn {
-            background-color: #28A745;
-            color: white;
-            font-weight: 500;
-            padding: 8px 15px;
-            border-radius: 5px;
-            border: none;
-        }
-        .cart-btn:hover {
-            background-color: #218838;
-        }
-        .download-btn {
+
+        .btn-light {
+            color: #333;
             background-color: white;
-            color: #2C3E50;
-            font-weight: 500;
-            padding: 8px 15px;
-            border-radius: 5px;
-            border: none;
+            border-color: white;
         }
-        .download-btn:hover {
-            background-color: #ECF0F1;
+
+        .btn-light:hover {
+            background-color: #f0f0f0;
+            border-color: #f0f0f0;
         }
+
     </style>
 </head>
 <body>
         <!--Ahmad Khalil -->
-    <div class="sticky-header d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center">
-            <i class="bi bi-arrow-left icon-btn"></i>
-            <a href="#" class="nav-text">Litech - Bootstrap Corporate WordPress Theme</a>
-        </div>
-        <div class="d-flex align-items-center">
-            <button class="icon-btn"><i class="bi bi-phone"></i></button>
-            <button class="icon-btn"><i class="bi bi-tablet"></i></button>
-            <button class="icon-btn"><i class="bi bi-display"></i></button>
-        </div>
-        <div class="d-flex align-items-center">
-            <button class="cart-btn"><i class="bi bi-cart me-1"></i> Add to Cart</button>
-            <button class="download-btn ms-2"><i class="bi bi-cart me-1"></i> Get Unlimited Downloads</button>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg bg-white navbar-light navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="Logo.svg" alt="Litech Logo" class="me-2">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
-                            <li><a class="dropdown-item" href="#">SEO</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-bs-toggle="dropdown">
-                            Team
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Our Team</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center">
-                <i class="bi bi-telephone phone-icon"></i>
-                <span class="fw-bold text-dark me-3">+1(505) 555-0125</span>
-                <a href="#" class="contact-button">Get in touch</a>
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4 fw-bold">We Provide the Best value for Business</h1>
+                <p class="lead">Reliable, proven solutions that meet international industry practices and standards</p>
+                <div class="hero-buttons mt-4">
+                    <a href="#" class="btn btn-primary me-3">Get Started Now</a>
+                    <a href="#" class="btn btn-light">Our Services</a>
+                </div>
             </div>
         </div>
-    </nav>
-
+    </section>
     <!--Ahmad Khalil -->
 </body>
 </html>
