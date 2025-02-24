@@ -164,7 +164,79 @@
     }
 
     /*AHMAD KHALIL CSS*/
-    
+
+
+
+
+    /*RUA SAELH CSS*/
+    .pricing-table {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .highlight {
+            background-color: #0056ff;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .highlight .btn {
+            background-color: white;
+            color: #0056ff;
+        }
+        .custom-hero-section {
+            position: relative;
+            padding: 120px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .custom-hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* لجعل الصورة في الخلف */
+        }
+
+        .custom-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .custom-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .custom-hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .custom-hero-content p {
+            font-size: 1.2rem;
+        }
+
+        .custom-hero-content .btn {
+            margin-top: 20px;
+        }
+    /*RUA SAELH CSS*/
+
     </style>
 </head>
 <body>
@@ -249,5 +321,89 @@
     
          <!--Ahmad Khalil -->
 
+
+
+
+
+
+
+
+
+
+
+         <!-- rua saleh -->
+         <div class="container pricing-table">
+            <h6 class="text-muted text-uppercase">Business Pricing</h6>
+            <h2>Discover Our <span class="text-primary">Best Plans</span></h2>
+            
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4>Starter</h4>
+                        <h3 class="text-primary">FREE</h3>
+                        <ul class="list-unstyled">
+                            <li>✔ 3 projects</li>
+                            <li>✔ 30-day version history</li>
+                            <li>✔ Up to 2 editors</li>
+                            <li>✔ Unlimited cloud storage</li>
+                            <li>✔ 2 legal advice</li>
+                            <li>✔ Financial reports</li>
+                            <li>✔ Tax planning</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="card p-4 highlight">
+                        <h4>Starter <span class="badge bg-light text-primary">NEW</span></h4>
+                        <h3>$9.99 <small>/MO</small></h3>
+                        <ul class="list-unstyled">
+                            <li>✔ 3 projects</li>
+                            <li>✔ 30-day version history</li>
+                            <li>✔ Up to 2 editors</li>
+                            <li>✔ Unlimited cloud storage</li>
+                            <li>✔ 2 legal advice</li>
+                            <li>✔ Financial reports</li>
+                            <li>✔ Tax planning</li>
+                        </ul>
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h4>Business</h4>
+                        <h3 class="text-primary">$14.99 <small>/MO</small></h3>
+                        <ul class="list-unstyled">
+                            <li>✔ 3 projects</li>
+                            <li>✔ 30-day version history</li>
+                            <li>✔ Up to 2 editors</li>
+                            <li>✔ Unlimited cloud storage</li>
+                            <li>✔ 10 legal advice</li>
+                            <li>✔ Financial reports</li>
+                            <li>✔ Tax planning</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                   <!-- rua saleh -->
+
+                   <div class="custom-hero-section">
+                    <img src="work2.jpg" alt="Background Image" class="custom-hero-image"> <!-- ضع رابط الصورة هنا -->
+                    <div class="custom-hero-overlay"></div>
+                    <div class="container">
+                        <div class="custom-hero-content">
+                            <h1>We'll suggest the plan that's right for your business</h1>
+                            <p>Ready to start your project? The contact information collected through this form will only be used to send a response to your inquiry.</p>
+                            <form>
+                                <input type="email" class="form-control w-50 mx-auto" placeholder="E-mail">
+                                <button type="submit" class="btn btn-primary mt-3">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 </body>
 </html>
