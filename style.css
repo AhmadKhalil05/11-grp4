@@ -1,0 +1,132 @@
+
+
+.photo {
+    height: 900px;
+    background-image: url(photo/group-diverse-people-having-business-meeting-1.webp);
+    margin-bottom: 250px;
+}
+.titel1 {
+    font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+.parg1{
+    font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5em;
+  padding: 0px 15px 28px 0px
+}
+button {
+    font-family: "Inter", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-1 {
+   width: 200px;
+   height: 60px;
+   font-weight: 500;
+   font-size: 18px;
+  background-color: #1545f1
+   
+}
+.btn-2 {
+    width: 200px;
+    height: 60px; 
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: white;
+    color:#1545f1
+    
+}
+.btn-1:hover {
+    background-color: white;
+    color:#1545f1
+}
+.btn-2:hover {
+    background-color: #1545f1;
+    color:white ;
+}
+
+.card-title {
+    color: #ABABB0;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.card-text {
+    text-align: left;
+  color: #2E2C39;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-bottom: 40px;
+}
+.card-text2 {
+    text-align: left;
+  color: #2E2C39;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+
+}
+.btn-3 {
+    background-color: #1545f1;
+}
+.btn-3:hover {
+background-color: black;
+
+
+
+
+}
+.card-title1 {
+    color: #2E2C39;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+.card-text1 {
+    color: #2E2C39;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  align-self: flex-start;
+  text-align: left;
+  
+}
+.iconz {
+
+    color: #1545f1;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 20px;
+  font-weight: 600;
+}
+.iconz:hover {
+    color :black;
+}
+.cardzz {
+    margin-right: 80px;
+    box-shadow: 5px 15px 30px 15px #ececec ;
+    
+    
+}
+.card-icon {
+    width: 60px;
+    margin: 15px 5px 0px 170px;
+   
+}
+.big-card {
+    margin-bottom: 100px;
+}
+
+.three-card-zeina {
+    margin-top: 50px;
+}
